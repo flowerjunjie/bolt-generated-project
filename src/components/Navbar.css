@@ -1,0 +1,85 @@
+.navbar {
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1rem 2rem;
+    }
+
+    .navbar-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #667eea;
+      text-decoration: none;
+      gap: 0.5rem;
+    }
+
+    .logo-image {
+      height: 40px;
+      width: auto;
+    }
+
+    .navbar-menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 2rem;
+    }
+
+    .navbar-item {
+      position: relative;
+    }
+
+    .navbar-link {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-link:hover {
+      color: #667eea;
+    }
+
+    .navbar-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #667eea;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-link:hover::after {
+      transform: scaleX(1);
+    }
+
+    .auth-link {
+      background: #667eea;
+      color: white;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1.5rem;
+      transition: background 0.3s ease;
+    }
+
+    .auth-link:hover {
+      background: #5a6fd1;
+      color: white;
+    }
+
+    .auth-link::after {
+      display: none;
+    }

@@ -1,0 +1,44 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .modules, .learning-sections, .test-types {
+      display: grid;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .modules {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .learning-sections, .test-types {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 4px;
+    }
